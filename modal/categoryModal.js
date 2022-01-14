@@ -1,6 +1,6 @@
 const readCategories =async () => {
     let categories ;
-    await $.getJSON('jsonTables/category.json', function(data) {
+    await $.getJSON('/jsonTables/category.json', function(data) {
         categories = data
     });
     return categories    

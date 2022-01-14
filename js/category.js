@@ -17,6 +17,7 @@ import {
 $(window).load(async function () {
   try {
     let category = getUrlParameter("type");
+    console.log(category);
     if (!category) {
       throw new Error("Type Of Category Not Found");
     }
