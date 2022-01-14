@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Inconsolata:wght@300&family=Licorice&family=Major+Mono+Display&family=Nunito:wght@600&family=Open+Sans+Condensed:ital,wght@1,300&family=Rubik:ital,wght@1,300&family=Source+Code+Pro:ital,wght@1,300&family=Space+Mono&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Inconsolata:wght@300&family=Licorice&family=Major+Mono+Display&family=Nunito:wght@600&family=Open+Sans+Condensed:ital,wght@1,300&family=Righteous&family=Rubik:ital,wght@1,300&family=Source+Code+Pro:ital,wght@1,300&family=Space+Mono&family=Staatliches&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 10;
+}
+.cart-message {
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  display: none;
+}
+.container-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 100%;
+  position: relative;
+  top: 0%;
+  margin-top: 3px;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: black;
+  padding-left: 25px;
+  top: -57px;
+  position: relative;
+}
+.logo:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+.main-nav {
+  width: 50%;
+  height: 100%;
+}
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-list {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.main-list li {
+  width: 110px;
+  text-align: center;
+  padding-bottom: 3px;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.account {
+  display: flex;
+}
+.account i {
+  margin: 7px;
+}
+.dropdown-wrapper {
+  position: relative;
+  z-index: 10;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 160px;
+}
+.dropdown-content button {
+  width: 100%;
+  display: block;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+  color: black;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: none;
+  border: 1px solid black;
+  background-color: white;
+}
+.dropdown-wrapper:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content button:hover {
+  border: none;
+  background-color: black;
+  /* opacity: 0.6; */
+  color: white;
+}
+
+.main-list li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.main-list li:hover:after {
+  width: 100%;
+  background: black;
+}
+
+.right-menu {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right-menu button {
+  background-color: transparent;
+  border: none;
+}
+.right-menu i {
+  font-size: 25px;
+  color: black;
+  transition: font-size 200ms ease-in-out;
+}
+.right-menu i:hover {
+  font-size: 38px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total-Price{
+  width: 100%;
+  height: 10%;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-item{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom:5px ;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+
+}
+
+.ui-widget-overlay{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+.ui-dialog-titlebar{
+  display: none;
+}
+.ui-dialog .ui-dialog-buttonpane button{
+  background-color: #c96;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+}
+.ui-widget-content{
+  border: none;
+  color: black;
+}
+.cart-item-body{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-item-name{
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Space Mono", monospace;
+  margin-right: 10px;
+}
+.cart-item-img{
+  width: 30%;
+  height: 100%;
+}
+.cart-item-img>img{
+  width: 70%;
+  height: 100%;
+  margin-left: 20px;
+  background-size:  cover;
+  border-radius: 5px;
+}
+.cart-control{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-control>button{
+  padding: 3px 10px 3px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: bolder;
+  background-color: #c96;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.cart-control>button:last-of-type{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.cart-control>label{
+  padding: 0%;
+  margin: 0%;
+  font-family: "Space Mono", monospace;
+}
+.fav-item-name{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Space Mono", monospace;
+  margin-right: 10px;
+}
+.fav-delete{
+  font-family: "Space Mono", monospace;
+  padding-right: 2px;
+  margin-right: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.intro-slide {
+  width: 100%;
+  /* border: 2px solid black; */
+  position: relative;
+  height: 300px;
+}
+.intro-slide > img {
+  margin-bottom: 3px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.main-conainer {
+  width: 95%;
+  display: flex;
+}
+.container-category {
+  margin-top: 35px;
+  width: 22%;
+  border-right: 1px solid gray;
+}
+.container-category > button {
+  width: 96%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+.categort-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.category-type-name {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-family: "Space Mono", monospace;
+  padding: 10px;
+}
+.container-gallery {
+  width: 78%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product-container {
+  margin: 4% 3% 1% 4%;
+  width: 25%;
+  height: 400px;
+  transition: all 500ms ease-in-out;
+}
+.product-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.472);
+  transform: scale(1.1);
+}
+.product-item {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.fav{
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(136, 0, 0);
+  transition: transform 200ms ease-in-out;
+}
+.fav:hover{
+  transform: scale(1.3);
+}
+.product-img {
+  width: 100%;
+  height: 90%;
+  /* background-size: 100% 100%; */
+}
+.product-action {
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: white;
+  border: none;
+  position: absolute;
+  /* top: 85%; */
+  bottom: -10%;
+  text-align: center;
+  /* display: none; */
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
+  color: #c96;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+.product-container:hover .product-action {
+  /* display: block; */
+  opacity: 1;
+  bottom: 0%;
+  border-bottom: 1px solid gray;
+}
+.product-action > i {
+  color: #c96;
+  font-size: 15px;
+}
+.product-action:hover {
+  background-color: #c96;
+  color: white;
+}
+.product-action:hover i {
+  color: white;
+}
+
+.product-body {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-body > label {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.name {
+  font-size: 1.2rem;
+  margin-top: 2px;
+  color: rgb(19, 0, 49);
+  font-family: "Space Mono", monospace;
+}
+.description {
+  font-size: 0.8rem;
+  font-family: "Ubuntu Mono", monospace;
+}
+.price {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  font-family: "Ubuntu Mono", monospace;
+  color: rgb(206, 126, 47);
+}
