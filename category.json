@@ -1,111 +1,111 @@
 [
   {
-    "categoryImg": "../assets/category/suit-banner.jpg",
+    "categoryImg": "/assets/category/suit-banner.jpg",
     "categoryName": "Suit",
     "items": [
       {
         "id":"Suit_Royal",
         "name": "Suit Royal",
         "description": "Royal Blue 2022 Suit Men Wedding Suits For Man Jacket Men Suits Business Tuxedo",
-        "image": "./assets/category/suit/suit.jpg",
+        "image": "/assets/category/suit/suit.jpg",
         "price": 1500
       },{
         "id":"Suit_Luxury",
         "name": "Suit Luxury",
         "description": "SUIT Luxury Suit Men High-end Custom Business Blazers Men's Fashi",
-        "image": "./assets/category/suit/suit2.jpg",
+        "image": "/assets/category/suit/suit2.jpg",
         "price": 2500
       },{
         "id":"Suit_Tuxedo",
         "name": "Suit Tuxedo",
         "description": "Men Suit Men Tuxedo Custom Made Wedding Suits For Men Tailored Light Navy",
-        "image": "./assets/category/suit/suit3.jpg",
+        "image": "/assets/category/suit/suit3.jpg",
         "price": 2999
       }
     ]
   },
   {
-    "categoryImg": "./assets/category/accessory-banner.png",
+    "categoryImg": "/assets/category/accessory-banner.png",
     "categoryName": "Accessories",
     "items": [
       {
         "id":"Watches_Luxury",
         "name": "Watches Luxury",
         "description": "LIGE Mens Watches Top Brand Luxury Blue Steel Quartz 2019 Chronograph Waterpro",
-        "image": "./assets/category/accessory/watch1.jpg",
+        "image": "/assets/category/accessory/watch1.jpg",
         "price": 55
       },
       {
         "id":"Watches_Quartz",
         "name": "Watches Quartz",
         "description": "Lige Mens Watches Quartz Watch Man Waterproof Retro Clock 9852",
-        "image": "./assets/category/accessory/watch2.jpg",
+        "image": "/assets/category/accessory/watch2.jpg",
         "price": 80
       },
       {
         "id":"Hat",
         "name": "Hat",
         "description": "Lige Mens Watches Quartz Watch Man Waterproof Retro Clock 9852",
-        "image": "./assets/category/accessory/hat.jpg",
+        "image": "/assets/category/accessory/hat.jpg",
         "price": 150
       },
       {
         "id":"Steel_Ring",
         "name": "Steel Ring",
         "description": "Lige Mens Quartz Watch Man Waterproof Retro Clock 9852",
-        "image": "./assets/category/accessory/ring.jpg",
+        "image": "/assets/category/accessory/ring.jpg",
         "price": 99
       },
       {
         "id":"Sunglasses",
         "name": "Sunglasses",
         "description": "Mens sunglasses1 Quartz Watch Man Waterproof Retro Clock 9852",
-        "image": "./assets/category/accessory/sunglasses1.jpg",
+        "image": "/assets/category/accessory/sunglasses1.jpg",
         "price": 500
       }
     ]
   },{
-    "categoryImg": "./assets/category/cloth-banner.jpg",
+    "categoryImg": "/assets/category/cloth-banner.jpg",
     "categoryName": "Clothes",
     "items": [
       {
         "id":"Jacket_Luxury",
         "name": "Jacket Luxury",
         "description": "Jacket Mens Watches Top Brand Luxury Blue Steel Quartz 2019 Chronograph Waterpro",
-        "image": "./assets/category/cloth/Jacket.jpg",
+        "image": "/assets/category/cloth/Jacket.jpg",
         "price": 650
       },
       {
         "id":"Palto",
         "name": "Palto",
         "description": " Palto Top Brand Luxury Palto Chronograph Waterpro",
-        "image": "./assets/category/cloth/palto.jpg",
+        "image": "/assets/category/cloth/palto.jpg",
         "price": 999
       }
     ]
   },{
-    "categoryImg": "./assets/category/Shoes_banner.png",
+    "categoryImg": "/assets/category/Shoes_banner.png",
     "categoryName": "Shose",
     "items": [
       {
         "id":"Gray_Shose",
         "name": "Gray Shose",
         "description": " Shop for Classic Shoes for Men ",
-        "image": "./assets/category/shose/shose1.jpg",
+        "image": "/assets/category/shose/shose1.jpg",
         "price": 400
       },
       {
         "id":"Black_Shose",
         "name": "Black Shose",
         "description": "Mens Top Brand Luxury Black Chronograph Waterpro",
-        "image": "./assets/category/shose/shose2.jpg",
+        "image": "/assets/category/shose/shose2.jpg",
         "price": 600
       },
       {
         "id":"Light_Brown_Shose",
         "name": "Light Brown Shose",
         "description": " Light Brown for Classic Shoes for Men ",
-        "image": "./assets/category/shose/shose3.jpg",
+        "image": "/assets/category/shose/shose3.jpg",
         "price": 750
       }
     ]
