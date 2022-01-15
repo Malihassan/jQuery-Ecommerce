@@ -54,4 +54,4 @@ function getCookie(name) {
   return matches ? decodeURIComponent(matches[1]) : null;
 }
 
-export { login, newAccount };
+export { login, newAccount,getCookie };

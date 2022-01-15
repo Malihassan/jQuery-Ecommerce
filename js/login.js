@@ -49,10 +49,16 @@ function changeTabStyle() {
   self.addClass("active");
 }
 function displayRegisterWindow() {
+  // clear message 
+  $(".responseMessage").text("");
+
   $("#register-window").css("display", "block");
   $("#singin-window").css("display", "none");
 }
 function displaySinginWindow() {
+  // clear message 
+  $(".responseMessage").text("");
+  
   $("#singin-window").css("display", "block");
   $("#register-window").css("display", "none");
 }

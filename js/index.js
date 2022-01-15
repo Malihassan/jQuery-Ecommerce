@@ -1,4 +1,5 @@
 $(window).load(function(){
+    console.log('index script');
     $('.category-content').mouseenter(showShopNowButton)
     $('.category-content').mouseleave(hideShopNowButton)
     $('.shopNow').click(forwardToCategory)

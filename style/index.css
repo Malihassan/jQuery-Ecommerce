@@ -139,6 +139,10 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.right-menu button {
+  background-color: transparent;
+  border: none;
+}
 .right-menu i {
   font-size: 25px;
   color: white;

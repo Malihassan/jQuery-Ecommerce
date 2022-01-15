@@ -1,3 +1,4 @@
+import {getCookie} from "../modal/accountsModal.js";
 import {
   addFavoriteItem,
   removedFavorite,
@@ -15,9 +16,9 @@ import {
   incrementItemInCart,
 } from "../modal/cartModal.js";
 $(window).load(async function () {
+  console.log('script category');
   try {
     let category = getUrlParameter("type");
-    console.log(category);
     if (!category) {
       throw new Error("Type Of Category Not Found");
     }
@@ -30,6 +31,7 @@ $(window).load(async function () {
     asideCategorySlide();
     $(document).on("click", ".product-action", addItemHandeler);
     $(".cart-btn").click(cartDialogHandele);
+    $("#cart-btn").click(cartDialogHandele);
     $(document).on("click", "#increment", incrementItemHandeler);
     $(document).on("click", "#decrement", decrementItemHandeler);
     $(document).on("click", ".fav", addFavoriteHandeler);
@@ -96,6 +98,7 @@ async function addItemHandeler() {
   cartMessageHandeler(resMessage.res);
 }
 async function cartDialogHandele() {
+  console.log('btncart');
   let cart = getCartItems();
   if (!cart) {
     cartMessageHandeler("No Item In The Cart");
@@ -109,6 +112,10 @@ async function cartDialogHandele() {
     maxHeight: 400,
     buttons: {
       Checkout: function () {
+        if (!getCookie('token')) {
+          myDialog.dialog("close");
+          return cartMessageHandeler("Please Need To Login");
+        }
         cartMessageHandeler("Thank you . Success Transaction");
         myDialog.dialog("close");
         clearCart();
@@ -168,6 +175,7 @@ async function addFavoriteHandeler() {
   cartMessageHandeler(res);
 }
 function favoriteDialogHandler() {
+  console.log('btncart');
   let fav = getFavItems();
   if (!fav) {
     cartMessageHandeler("No Favorite Item");
