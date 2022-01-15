@@ -1,4 +1,4 @@
-import { login, newAccount } from "../modal/accounts.js";
+import { login, newAccount } from "../modal/accountsModal.js";
 $(window).load(function () {
   //this style add by default
   $(".form-tab li:first-of-type").addClass("active");
