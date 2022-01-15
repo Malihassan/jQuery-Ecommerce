@@ -1,6 +1,6 @@
 const readCategories =async () => {
     let categories ;
-    await $.getJSON('../category.json', function(data) {
+    await $.getJSON('https://malihassan.github.io/jQuery-Ecommerce/category.json', function(data) {
         categories = data
     });
     return categories    
